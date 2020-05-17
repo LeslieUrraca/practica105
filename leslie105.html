@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+const personas = [
+{
+nombre: "Leslie",
+edad: 34
+},
+{
+nombre: "Shantel",
+edad: 54
+},
+{
+nombre: "Juan",
+edad: 12
+},
+{
+nombre: "Jafet",
+edad: 22
+},
+{
+nombre: "Luimi",
+edad: 72
+}
+];
+const personasmayores = personas.filter((elemento, indice, arreglo) => elemento.edad <= 18);
+for (let persona of personasmayores)
+document.write(`${persona.nombre} ${persona.edad}<br>`);
+</script>
+</body>
+
+</html>
